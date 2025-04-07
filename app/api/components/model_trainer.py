@@ -13,10 +13,8 @@ from sklearn.metrics import r2_score
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
-
 from api.exception import CustomException
 from api.logger import logging
-
 from utils import save_object,evaluate_models
 
 @dataclass

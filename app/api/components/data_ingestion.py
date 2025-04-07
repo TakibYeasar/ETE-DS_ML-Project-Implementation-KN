@@ -3,10 +3,8 @@ import sys
 from api.exception import CustomException
 from api.logger import logging
 import pandas as pd
-
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-
 from api.components.data_transformation import DataTransformation
 from api.components.model_trainer import ModelTrainer
 

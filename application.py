@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request, Form
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
-from api.pipeline.predict_pipeline import CustomData, PredictPipeline
+from app.api.pipeline.predict_pipeline import CustomData, PredictPipeline
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
@@ -50,4 +50,4 @@ async def predict_data_post(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", debug=True)
+    uvicorn.run(app, host="0.0.0.0")
